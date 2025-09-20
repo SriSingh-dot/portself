@@ -5,32 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PortSelf — Home</title>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      background: url('port1.jpg') no-repeat center center fixed;
-      background-size: cover;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: hsl(212, 53%, 43%);
+    }
+
+    .home {
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       text-align: center;
+      background: url('port1.jpg') no-repeat center center;
+      background-size: cover;
     }
-    h1 {
+
+    .home h1 {
       font-size: 80px;
       font-weight: bold;
-      color: hsl(240, 100%, 79%);
+      color: hwb(224 38% 23%);
       font-family: Papyrus, "Lucida Handwriting", cursive, serif;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .about {
+      background: url('port2.jpg') no-repeat center top;
+      background-size: cover;
+      background-attachment: scroll;
+      padding: 60px 40px;
+      min-height: 100vh;
+    }
+
+    .about h2 {
+      font-size: 60px;
+      font-weight: bold;
+      font-family: Papyrus, "Lucida Handwriting", cursive, serif;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      color: #4a90e2;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about p {
+      max-width: 900px;
+      font-size: 20px;
+      text-align: left;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+      color: #4a90e2;
+    }
+
+    .right-img {
+      float: right;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      width: 200px; 
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .about::after {
+      content: "";
+      display: block;
+      clear: both;
     }
   </style>
 </head>
 <body>
-  <h1><u>Me and My Life</u></h1>
+
+  <section class="home">
+    <h1><u>Me and My Life</u></h1>
+  </section>
+
+  <section class="about">
+    <h2>Who Even Am I?</h2>
+
+    <img src="port3.jpg" alt="Cute photo" class="right-img">
+    <p>I am currently sixteen years old and will be turning seventeen this year. My real name is Srishti but I go by Sri on online platforms most of the time. I am a student and have a keen interest in history, art, and coding (still chose the non-medical stream for some reason). I am a very extroverted person and love animals very much. I personally dislike people who try to act dominant over others or look superior to them. I am an Indian and can speak Hindi, Maithili, Bhojpuri, English, and the most enchanting language of all, Sanskrit. Well in school years I first used to study French but later changed my language choice to Sanskrit (no hate, actually French was a language my mother could not teach). And yes I am a big foodie and love to eat all kinds of food, but I would appreciate chicken more. I follow Hinduism and believe in all the gods and goddesses of the Hindu pantheon. But you know every person has that one god they love the most and for me it's Lord Shiva (The Destroyer God).</p>
+
+    <img src="port4.jpg" alt="Cute Photo" class="right-img">
+    <p>My hobbies include reading online books, watching anime and dramas, listening to music, and coding. I also love to travel and explore new places. I am a person who does not like to talk nonsense for no reason, but I also wanted someone to talk to so I adopted a pet rabbit named Chicku. He is just so lovely and cute. My special skills are actually sports like badminton, tennis, and football. I also have played district matches in athletics, state matches in javelin, shot put, and discus throw. In 2021 I also won a gold medal in National level Karate championship of the form Taiyo Kai Shito Ryu. But sadly could not participate in the International Level because of COVID as well as you know I was not old enough to travel alone at that time, and my parents were not ready to let me go alone.</p>
+
+  </section>
+
+  
+
 </body>
 </html>
-
-
-<!--photo done.......in vs pulled.-->
-<!--port1.jpg -->
