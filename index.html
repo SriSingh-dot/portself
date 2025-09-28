@@ -10,13 +10,51 @@
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
       color: hsl(212, 53%, 43%);
+      background: url('port1.jpg') no-repeat center center fixed;
+      background-size: cover;
     }
-
+    section {
+      padding: 60px 40px;
+      min-height: 100vh;
+    }
+    h1, h2 {
+      text-align: center;
+      font-family: Papyrus, "Lucida Handwriting", cursive, serif;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      color: #4a90e2;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-size: 80px;
+      font-weight: bold;
+      color: hwb(224 38% 23%);
+      text-decoration: underline;
+    }
+    p {
+      max-width: 900px;
+      font-size: 20px;
+      margin-bottom: 30px;
+      text-align: left;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+      color: #4a90e2;
+    }
+    .right-img {
+      float: right;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .about::after, .gallery::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
     .home {
       height: 100vh;
       display: flex;
@@ -26,125 +64,57 @@
       background: url('port1.jpg') no-repeat center center;
       background-size: cover;
     }
-
-    .home h1 {
-      font-size: 80px;
-      font-weight: bold;
-      color: hwb(224 38% 23%);
-      font-family: Papyrus, "Lucida Handwriting", cursive, serif;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
     }
-
-    .about {
-      background: url('port2.jpg') no-repeat center top;
-      background-size: cover;
-      background-attachment: scroll;
-      padding: 60px 40px;
-      min-height: 100vh;
-    }
-
-    .about h2 {
-      font-size: 60px;
-      font-weight: bold;
-      font-family: Papyrus, "Lucida Handwriting", cursive, serif;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-      color: #4a90e2;
+    .gallery-item {
       text-align: center;
-      margin-bottom: 40px;
     }
-
-    .about p {
-      max-width: 900px;
-      font-size: 20px;
-      text-align: left;
-      margin-bottom: 30px;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
-      color: #4a90e2;
-    }
-
-    .right-img {
-      float: right;
-      margin-left: 20px;
-      margin-bottom: 20px;
-      width: 200px; 
-      height: auto;
+    .gallery-item img {
+      width: 100%;
+      max-width: 300px;
       border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     }
-
-    .about::after {
-      content: "";
-      display: block;
-      clear: both;
+    .gallery-item p {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #4a90e2;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
     }
-  
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
-  }
-
-  .gallery-item {
-    text-align: center;
-  }
-
-  .gallery-item img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  }
-
-  .gallery-item p {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #4a90e2;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
-  }
   </style>
 </head>
 <body>
-  <section class="home">
-    <h1><u>Me and My Life</u></h1>
-  </section>
 
-  <section class="about">
-    <h2>Who Even Am I?</h2>
-
-    <img src="port3.jpg" alt="Cute photo" class="right-img">
-    <p>I am currently sixteen years old and will be turning seventeen this year. My real name is Srishti but I go by Sri on online platforms most of the time. I am a student and have a keen interest in history, art, and coding (still chose the non-medical stream for some reason). I am a very extroverted person and love animals very much. I personally dislike people who try to act dominant over others or look superior to them. I am an Indian and can speak Hindi, Maithili, Bhojpuri, English, and the most enchanting language of all, Sanskrit. Well in school years I first used to study French but later changed my language choice to Sanskrit (no hate, actually French was a language my mother could not teach). And yes I am a big foodie and love to eat all kinds of food, but I would appreciate chicken more. I follow Hinduism and believe in all the gods and goddesses of the Hindu pantheon. But you know every person has that one god they love the most and for me it's Lord Shiva (The Destroyer God).</p>
-
-    <img src="port4.jpg" alt="Cute Photo" class="right-img">
-    <p>My hobbies include reading online books, watching anime and dramas, listening to music, and coding. I also love to travel and explore new places. I am a person who does not like to talk nonsense for no reason, but I also wanted someone to talk to so I adopted a pet rabbit named Chicku. He is just so lovely and cute. My special skills are actually sports like badminton, tennis, and football. I also have played district matches in athletics, state matches in javelin, shot put, and discus throw. In 2021 I also won a gold medal in National level Karate championship of the form Taiyo Kai Shito Ryu. But sadly could not participate in the International Level because of COVID as well as you know I was not old enough to travel alone at that time, and my parents were not ready to let me go alone.</p>
+<section class="home">
+  <h1>Me and My Life</h1>
 </section>
 
+<section class="about">
+  <h2>Who Even Am I?</h2>
+  <img src="port3.jpg" alt="Cute photo" class="right-img">
+  <p>I am currently sixteen years old and will be turning seventeen this year. My real name is Srishti but I go by Sri on online platforms most of the time. I am a student and have a keen interest in history, art, and coding (still chose the non-medical stream for some reason). I am a very extroverted person and love animals very much. I personally dislike people who try to act dominant over others or look superior to them. I am an Indian and can speak Hindi, Maithili, Bhojpuri, English, and Sanskrit. I first studied French in school but later switched to Sanskrit. I am a big foodie and love all kinds of food, especially chicken. I follow Hinduism and my favorite god is Lord Shiva.</p>
+  <img src="port4.jpg" alt="Cute Photo" class="right-img">
+  <p>My hobbies include reading online books, watching anime and dramas, listening to music, and coding. I also love to travel and explore new places. I adopted a pet rabbit named Chicku. He is just so lovely and cute. My special skills are sports like badminton, tennis, and football. I have played district matches in athletics and won a gold medal in National level Karate championship in 2021. COVID stopped me from competing internationally at that time.</p>
+</section>
 
-  <section="Art">
+<section id="Art">
   <h2>My Art Talent</h2>
+  <img src="port5.jpg" alt="Art Photo Madhubani" class="right-img">
+  <p>I think that art is what I inherited from my mother. Not trying to show off but my mother used to be a fashion designer and a professional Madhubani art artist. The sad thing is that we (me and her brother) held her back from her dreams and eventually she gave up that job to take care of us. I will not say that I am creative.....it's probably that I am just good at copying things. Like I do not remember a thing I made from my imagination and it came out successful. I HATE Water Colors.... in starting I do everything perfectly but then I get impatient and ruin the painting.</p>
 
-  <img src="port5.jpg" alt="Art Photo Madubani" class="right-img">
-  <p>I think that art is what i inherited from my mother.Not trying to show off but my mother used to be a fashion designer and a professional madhubani art artist.
-    The sad thing is that we (me and her brother) held her back from her dreams and eventually she gave up that job to take care of us.
-    I will not say that i am creative.....it's probably that i am just good at copying things.Like i do not rememeber a thing i made from my imagination and it came out successful.
-    I HAtE WatEr CoLoRs.... in starting i do everything perfectly but then i get impatient and Ruin the sh*t out of my painting.</p>
-  </p><img src="port6.jpg" alt="Modern Art Photo" class="right-img">
-<p>But i do like sketching and shading things and i think that i am pretty good and actually patient in those kinds of drawings.
-The two paintings which are displayed are actually made by me (source- got inspiration from pinterest)
- The one above is Madhubani painting originated originally from India from a small village in Bihar.
- Madhubani originally was painted only on gods.
- The painting below is a modern art consiting of proper straight lines and perfect proportions.
- Do tell me how it looks!!!
-Also tell me which type of art you like the most.</p>
+  <img src="port6.jpg" alt="Modern Art Photo" class="right-img">
+  <p>But I do like sketching and shading things and I think that I am pretty good and actually patient in those kinds of drawings. The two paintings which are displayed are actually made by me (source- got inspiration from Pinterest). The one above is Madhubani painting originated originally from India from a small village in Bihar. Madhubani originally was painted only on gods. The painting below is modern art consisting of proper straight lines and perfect proportions. Do tell me how it looks!!! Also tell me which type of art you like the most.</p>
 
-<p>Now do i believe that there is Art hidden everywhere? Certainly yes, I do actually believe that if one look with no other distraction and look around them clearly,
-   one can find art in the most unexpected places.
+  <p>Now I believe that art is hidden everywhere. Certainly yes, I actually believe that if one looks with no other distraction and looks around them clearly, one can find art in the most unexpected places.</p>
+</section>
+>
 
-</p>
- </section>
-
-<section="School">
+<section id="School">
   <h2>School Life</h2>
-
   <img src="port7.jpg" alt="School Photo 1" class="right-img">
   <p>Do I like school???</p>
 
@@ -159,129 +129,126 @@ Also tell me which type of art you like the most.</p>
 </section>
 
 
-<section="Studies">
+<section id="Studies">
   <h2>My Studies</h2>
-
   <img src="port9.jpg" alt="Studies Photo 1" class="right-img">
-  <p>With future success in mind I must study. I took non-med as my stream (all stream- commerce/humanities/science(medical/non-medical)). In non-medical we have have maths,chemistry and physics (English is compulsory for all stream) and we have to choose two additional subjects. The choices for first subject : (Music/Painting) . The choice for second subject: (Computer Science/Psychology/Physical Education). And yes!!! I chose painting and computer science as additional subject.The most schocking thing is that i thought that painting would be easy! WELL NOT AT ALL !!! We literally learn about painting have to writer about their writer,color composition , style , why they drew extra-extra like WHY?? WHAT IS THE NEED? </p>
+  <p>With future success in mind I must study. I took non-med as my stream (all stream- commerce/humanities/science (medical/non-medical)). In non-medical we have maths, chemistry, and physics (English is compulsory for all streams) and we have to choose two additional subjects. The choices for first subject: (Music/Painting). The choice for second subject: (Computer Science/Psychology/Physical Education). And yes!!! I chose painting and computer science as additional subjects. The most shocking thing is that I thought that painting would be easy! WELL NOT AT ALL!!! We literally learn about painting, have to write about their writer, color composition, style, why they drew extra-extra like WHY?? WHAT IS THE NEED?</p>
 
   <img src="port10.jpg" alt="Studies Photo 2" class="right-img">
-  <p>After taking the most difficult stream- science . I just keep wondering if i should have taken commerce. The thing in our society is that if you take science stream- you would get respect and would be talked behind your back and criticised for taking Humanities (also known as ARTS). According to our messed up Indian society the one who takes ARTS are not good enough!! and the people who are average takes up commerce. Well i am one of those people who never had a dream job. For me it works like "I would take the job i perform best in". Well it's not from Science stream as far as I know. Since childhood i have always been very interested in Historical facts and all. But who will convince my parents to change my stream. Anyays it's already too late to now cry about it.</p>
-
+  <p>After taking the most difficult stream—science, I just keep wondering if I should have taken commerce. The thing in our society is that if you take science stream, you would get respect and would be talked behind your back and criticised for taking Humanities (also known as ARTS). According to our messed up Indian society, the ones who take ARTS are not good enough!! And the people who are average take up commerce. Well I am one of those people who never had a dream job. For me it works like "I would take the job I perform best in". Well it's not from Science stream as far as I know. Since childhood I have always been very interested in Historical facts and all. But who will convince my parents to change my stream? Anyways, it's already too late to now cry about it.</p>
 </section>
 
-<section="Personality">
-  <h2>My Personality</h2>
 
+<section id="Personality">
+  <h2>My Personality</h2>
   <img src="port11.jpg" alt="Personality Photo 1" class="right-img">
-  <p> I am a extrovert, not the one who likes to just chat with any random person  but enough extrovert to keep my points in front of others.I must say no one is born categorised in introvert or extrovert. I was way too intovert till grade 3rd grade then on changing schools i got confidence. You may ask where i got that much confidende right? (Well at that time i came across students who were mostly from villages and did not understand much of what i was saying) [note : I know that was not a good thing but i was just a kid. I was used to get bullied so it was my first time seeing people who were interested in me]. You do not wanna know how dumb i was ......like really dumb . At that time my own best friend got me slapped from a teacher and also she used to bully me. LIKE WHAT WAS WRONG WITH ME????.</p>
+  <p>I am an extrovert, not the one who likes to just chat with any random person, but enough extrovert to keep my points in front of others. I must say no one is born categorised as introvert or extrovert. I was very introvert till 3rd grade; then, on changing schools, I got confidence. You may ask where I got that much confidence, right? (Well, at that time I came across students who were mostly from villages and did not understand much of what I was saying) [note: I know that was not a good thing, but I was just a kid. I was used to get bullied, so it was my first time seeing people who were interested in me]. You do not wanna know how dumb I was... really dumb. At that time my own best friend got me slapped by a teacher, and also she used to bully me. LIKE WHAT WAS WRONG WITH ME????</p>
 
   <img src="port12.jpg" alt="Personality Photo 2" class="right-img">
-  <p>Well its all past. Now i have a best friend like an angel and not kidding her name is "Angel". She is great great. In other ways i am very calm person like way too calm.I don not get offended easily so i do not say anything to people who talk bad about me.BUT THERE IS ALWAYS A LIMIT TO EVERY LITTLE THING IN THIS WORLD. Once that limit is crossed,you may wanna pray for yourself cause i might be the strongest woman you have cam face to face. Well i do not curse in front of people and call teachers weird names like others (i curse only in text). I usually hate to show my weakness and emotions in front of people cause i bet most of them are actual snakes in disguised.</p>
-
+  <p>Well, it's all past. Now I have a best friend like an angel, and not kidding, her name is "Angel". She is great, great. In other ways, I am very calm, like way too calm. I do not get offended easily, so I do not say anything to people who talk bad about me. BUT THERE IS ALWAYS A LIMIT TO EVERY LITTLE THING IN THIS WORLD. Once that limit is crossed, you may wanna pray for yourself because I might be the strongest woman you have come face to face with. Well, I do not curse in front of people and call teachers weird names like others (I curse only in text). I usually hate to show my weakness and emotions in front of people because I bet most of them are actual snakes in disguise.</p>
 </section>
 
-<section="Idols">
-  <h2>My Idols</h2>
 
+<section id="Idols">
+  <h2>My Idols</h2>
   <img src="port13.jpg" alt="Idol Photo 1" class="right-img">
-  <p>In today's world one must be really living under a rock for decades for not knowing what BTS is...... Haters trying to be cool call it Behind the scene or Bangtan Toilet Service. Like really? Just because your crush/girlfriend cares more about BTS than you? BTS is one of the best thing happened to me.I cannot afford their merch,cannot afford their light stick and albums but still there is something special which they ignite in evryone's heart.</p>
+  <p>In today's world, one must be really living under a rock for decades to not know what BTS is... Haters trying to be cool call it "Behind the Scene" or "Bangtan Toilet Service." Like really? Just because your crush/girlfriend cares more about BTS than you? BTS is one of the best things that happened to me. I cannot afford their merch, cannot afford their light stick and albums, but still there is something special which they ignite in everyone's heart.</p>
 
   <img src="port14.jpg" alt="Idol Photo 2" class="right-img">
-  <p>People telling that they look like girls?? Well one should mind their own business they can be girls, act as one, or even if they are !!! It has nothing to do with us. They sing and we listen,we are not suppose to actually interfere in their personal life. SORRY  its just that there has been lot going on in 2025.Well i love them and hope for their best in future.</p>
-
+  <p>People saying that they look like girls?? Well, one should mind their own business. They can be girls, act as one, or even if they are!!! It has nothing to do with us. They sing and we listen; we are not supposed to interfere in their personal life. SORRY, it’s just that there has been a lot going on in 2025. Well, I love them and hope for their best in the future.</p>
 </section>
 
 
+<section id="Brother">
   <h2>My Brother</h2>
-
   <img src="port15.jpg" alt="Brother Photo 1" class="right-img">
-  <p>My brother is four years older than me.When i was born and my brother got allowed to enter in hospital room,he was eating chips and to show love he decided to share it with me.He literally tried sharing his own chips to his sister (well it is kind of hearttouchin as kids that small do not like to share their snacks with anyone.) Well all my life my mother said that she does not show favourism at all.....you know what? the whole family shows favourism.</p>
+  <p>My brother is four years older than me. When I was born and my brother got allowed to enter the hospital room, he was eating chips, and to show love he decided to share it with me. He literally tried sharing his own chips with his sister (well, it is kind of heart-touching as kids that small do not like to share their snacks with anyone). Well, all my life my mother said that she does not show favoritism at all… you know what? The whole family shows favoritism.</p>
 
   <img src="port16.jpg" alt="Brother Photo 2" class="right-img">
-  <p>Well we would have been great siblings if his male teen ego did not kick in. I used to play with my brother and friends but later he started to drive me out of every plan of theirs.Now he is in college doing internship and stuff so we again started acting normal. Its like suddenly all toxity among us has disappeared.Well i do not like the fact that he is the better kid,student and sibling.I am tired of all the coparison. What do you mean that we are not like each other? Well we are not each other that is why! </p>
- 
-<section="Neighbors">
-  <h2>My Neighbors</h2>
+  <p>Well, we would have been great siblings if his male teen ego did not kick in. I used to play with my brother and friends, but later he started to drive me out of every plan of theirs. Now he is in college doing internship and stuff, so we again started acting normal. It's like suddenly all toxicity among us has disappeared. Well, I do not like the fact that he is the better kid, student, and sibling. I am tired of all the comparison. What do you mean that we are not like each other? Well, we are not each other; that is why!</p>
+</section>
 
+<section id="Neighbors">
+  <h2>My Neighbors</h2>
   <img src="port17.jpg" alt="Neighbor Photo 1" class="right-img">
-  <p>Well many of my neighbours have been family-friends for years....or should i say family-snake.They all can fool my mother,brother,father and grandparents but i can see right through them. They make fun when one of the reative is missing,where is the guarantee that they do not do the same behind our backs.Specially those aunties....whome we would call "Gossiping Unemployed Women".These ladies believe that if any kid of others are doing something amzing then they are doing bad but if their kids are doing the same then they are the God.</p>
+  <p>Well, many of my neighbours have been family-friends for years… or should I say family-snakes. They all can fool my mother, brother, father, and grandparents, but I can see right through them. They make fun when one of the relatives is missing. Where is the guarantee that they do not do the same behind our backs? Especially those aunties… whom we would call "Gossiping Unemployed Women". These ladies believe that if any kid of others is doing something amazing, then they are doing bad; but if their kids are doing the same, then they are the God.</p>
 
   <img src="port18.jpg" alt="Neighbor Photo 2" class="right-img">
-  <p>I myself have heard them talking about me. Like me??? Imagine being so done with life and useless that you are taking bad about kids with your friends. Does that even make sense?.Their husbands are unbeievably loud and so irritating like what so funny about a red car backing into its parking place to park the car?.All are very dramatic.Those aunties do not have a better thing to do. They wear saris indecently (like there is a decent way) and then judge girls who wear dresses (dresses is a lot.....they even judge girls wearing a long dress).Unemployement at its peak.</p>
-
+  <p>I myself have heard them talking about me. Like me??? Imagine being so done with life and useless that you are talking bad about kids with your friends. Does that even make sense? Their husbands are unbelievably loud and so irritating—like what’s so funny about a red car backing into its parking place? All are very dramatic. Those aunties do not have a better thing to do. They wear saris indecently (like there is a decent way) and then judge girls who wear dresses (dresses are a lot… they even judge girls wearing a long dress). Unemployment at its peak.</p>
 </section>
-<section="Chemistry">
-  <h2>My Chemistry</h2>
 
+
+<section id="Chemistry">
+  <h2>My Chemistry</h2>
   <img src="port19.jpg" alt="Chemistry Photo 1" class="right-img">
-  <p>Chemistry?Cemistry? I still wonder if we got scammed till grade tenth......like why the chemistry which was the baby subject suddenly turn so hostile.I just gave my mid term and i am pretty sure i am gonna fail.Why do you also include JEE Mains and Advance Questions when we are only preparing for 12th Board 2027.Nope to prove that they teach better my chemitry teacher likes to maked students cry, and ya for some reason he thinks that he is very cool.</p>
+  <p>Chemistry? Cemistry? I still wonder if we got scammed till grade tenth… like why the chemistry which was the baby subject suddenly turns so hostile. I just gave my midterm and I am pretty sure I am going to fail. Why do you also include JEE Mains and Advance Questions when we are only preparing for 12th Board 2027? Nope, to prove that they teach better, my chemistry teacher likes to make students cry, and for some reason he thinks that he is very cool.</p>
 
   <img src="port20.jpg" alt="Chemistry Photo 2" class="right-img">
-  <p>He sounds som lame and weird trying to be cool when he only looking like a plan "Chomu"(meaning-https://search.brave.com/search?q=chomu+meaning&summary=1&conversation=4471f57f307ac5107566ec).He calls students name on their face.He got some personal issues with me and my best friend he said things like: "Srishti is being controlled by the person on his back!" and "Srishti is the cart and the one sitting and controlling like Krishna is *real name will not be provided*(Angel)"". What did we do to you man?I and my best friend and other friends hate him.He is very hatable.</p>
-
+  <p>He sounds so lame and weird trying to be cool when he only looks like a plan "Chomu" (meaning- <a href="https://search.brave.com/search?q=chomu+meaning&summary=1">https://search.brave.com/search?q=chomu+meaning&summary=1</a>). He calls students names to their face. He got some personal issues with me and my best friend; he said things like: "Srishti is being controlled by the person on his back!" and "Srishti is the cart and the one sitting and controlling like Krishna is *real name will not be provided* (Angel)". What did we do to you man? I and my best friend and other friends hate him. He is very hatable.</p>
 </section>
 
 
+<section id="Maths">
   <h2>My Maths</h2>
-
   <img src="port21.jpg" alt="Maths Photo 1" class="right-img">
-  <p>Maths....My od rival subject....I had beef with maths since grade 6th but in final exams i always did a comback. In 10th i was fail in preboard exam with only 41 marks but in boards i got 93.I always taught maths to myslf and never actually was taught by a teacher. (Lying-papa laughing in the corner).One could say that i was never interested in hearing,why woud i like hearing numbers being recited? In my father's teaching case something was differednt and that was "AURA".He gave off very dangerous aura while teaching and i hated sundays when i was younger.....The out of nowhere line. "Go bring your maths book and rough copy" used to send shivers down my spine.</p>
+  <p>Maths… my old rival subject. I had beef with maths since grade 6th, but in final exams I always did a comeback. In 10th, I failed in preboard exam with only 41 marks, but in boards I got 93. I always taught maths to myself and was never actually taught by a teacher (lying—papa laughing in the corner). One could say that I was never interested in hearing, why would I like hearing numbers being recited? In my father's teaching case, something was different and that was "AURA". He gave off a very dangerous aura while teaching, and I hated Sundays when I was younger… The out-of-nowhere line "Go bring your maths book and rough copy" used to send shivers down my spine.</p>
 
   <img src="port22.jpg" alt="Maths Photo 2" class="right-img">
-  <p>In grade 8th there was a teacher who was very strict and i was scolded by her many times but atleast i used to understand what she is saying.My present teacher since 9th grade is just pure pain in my bum bum.He only teaches people who already have studied the chapters and always used to start from the back exercise (the most difficult)without any introduction saying he would teach us from last to first but we never even finished the last exercise.</p>
+  <p>In grade 8th, there was a teacher who was very strict, and I was scolded by her many times, but at least I used to understand what she was saying. My present teacher since 9th grade is just pure pain in my bum bum. He only teaches people who already have studied the chapters and always used to start from the back exercise (the most difficult) without any introduction saying he would teach us from last to first, but we never even finished the last exercise.</p>
+</section>
 
 
-
+<section id="Physics">
   <h2>My Physics</h2>
+  <img src="port23.jpg" alt="Physics Photo 1" class="right-img">
+  <p>To be honest, I do not have a single thing to say about this subject. Ok, chemistry exists, maths exists, then why physics exists? The only physics I use in my daily life is common sense, and I have never seen someone opening a book and seeing how to solve their problems which require physics. Just like TikTok, physics should also be banned from our country… nope, the whole world. It just sends students into depression; that is the only thing it does.</p>
 
-  <img src="port23.jpg" alt="phsyics" class="right-img">
-  <p>To be honest i do not have a single thing to say about this subject.Ok chemistry exists,maths exists,then why physics exists.The only physics i use in my daily life is common sense and i have never seen someone opeing a book and see how to solve their problems which require physics.Just like tik-tok Physics should also be banned from our country....nope the whole world.It just sends students in depression that is the only thing it does.</p>
-
-  <img src="port24.jpg" alt="Physics-2" class="right-img">
-  <p>Our Physic teacher is a nice man but its my fault for not understanding what he teaches.It has been nearly three years of him teaching us but he still do not know our names.Well i do not have any problems with it and whenever he wants to call me,he calls me Chiku (coincidently my pet has the same name).He is the only teacher who has never shown favourism towards any specific students.</p>
- 
+  <img src="port24.jpg" alt="Physics Photo 2" class="right-img">
+  <p>Our physics teacher is a nice man, but it's my fault for not understanding what he teaches. It has been nearly three years of him teaching us, but he still does not know our names. Well, I do not have any problems with it, and whenever he wants to call me, he calls me Chiku (coincidentally, my pet has the same name). He is the only teacher who has never shown favouritism towards any specific students.</p>
+</section>
 
 
-  
+<section id="Friends">
   <h2>My Friends</h2>
+  <img src="port25.jpg" alt="Weird People" class="right-img">
+  <p>As I said, when I was young, I used to be bullied and accepted everyone to be my friend out of kindness, or one could say, out of loneliness. Now I am very selective of my friends. In my whole life, I have only made 3 best friends. The first one used to bully me. The second one had other friends as priorities. But, you know, there is a fruit for every hardship you go through. My 3rd best friend is the best thing that happened to me, and I bet she would be my best friend for my whole life. When I shifted schools for grade 11th, she wasn't the first friend I made. There were many temporary ones.</p>
 
-  <img src="port25.jpg" alt="weird peopele" class="right-img">
-  <p>As i said that when i was young i used to be bullied and accepted everyone to be my friend out of kindness or one could say that out of loneliness.Now i am very selecttive of my friends.In my whole life i have only made 3 best friends.First one used to bully me.Second one had other friends as priorities . But,you know there is a fruit for every hardship you go through.My 3rd best friends is the best thing happened to me.And i bet she would be my bestfriend for my whole life.When i shifted schools for grade 11th she wasn't the first friend i made. There were many termporary ones.</p>
-  <img src="port26.jpg" alt="weird people-2" class="right-img">
-  <p>My first hater or enemy of this school was .....let's call him Namjoon.He hated me alot,rolled eyes when i used to talk and make faces.Do you know when we first talked? When he came to me asking if i could help his friend in exam by cheating who was going to sit behind my back.And i did....then we started talking. and later the same year Namjoon got into a fight with his friend and they never talked again. In mid session of class 9th me,my bestfriend and namjoon became good friends. And we are still good friends. Just before writing this paragraph i was texting in our group chat with them. Lovely People!!!</p>
-
-
-
-  <h2>Namjoon (My Friend)</h2>
-
-  <img src="port27.jpg" alt="friend" class="right-img">
-  <p>Every class has that bully or one could say the naughtiest.....yup this was him.Almost at the end of 9th grade he told us both that he Do have crush on someone from this class while we were playing truth and dare.But he took promise from us to never ask him who, so we actually never did. Then the same year during annual function when i was alone he came to me telling that he have crush on....Bhindi (unreal name..name of a veggie).I looked at him in disgust.Like couldn't you choose someone who is better and doesn't give a playgirl vibe.He told me not to tell Angel but i did afterall she was my bestfriend. Why would i hide from her,and yahh she was shocked too</p>
-  <img src="port28.jpg" alt="friend" class="right-img">
-  <p>Well he has was warned by me,Angel and his friends too but you know,he is a dumb man.Let me tell you,he was rude,naughty but actually now he is very respectful and kind of a gentleman.Yup he got cheated on.Lol We (friends) kind of expected this then he suddenly was lik "Oh! i am so relieved that she cheated.".Ya she used to kind of misuse his powers as he was the vice head boy and also used to give advices to our juniors on "How to kiss?"Like why? </p>
+  <img src="port26.jpg" alt="Weird People 2" class="right-img">
+  <p>My first hater or enemy of this school was… let's call him Namjoon. He hated me a lot, rolled eyes when I used to talk and make faces. Do you know when we first talked? When he came to me asking if I could help his friend in an exam by cheating who was going to sit behind my back. And I did… then we started talking. Later the same year, Namjoon got into a fight with his friend, and they never talked again. In mid-session of class 9th, me, my best friend, and Namjoon became good friends. And we are still good friends. Just before writing this paragraph, I was texting in our group chat with them. Lovely people!!!</p>
+</section>
 
 
+<section id="friends-detail">
+<h2>Namjoon (My Friend)</h2>
+<img src="port27.jpg" alt="Friend Photo" class="right-img">
+<p>Every class has that bully or one could say the naughtiest.....yup this was him.Almost at the end of 9th grade he told us both that he Do have crush on someone from this class while we were playing truth and dare.But he took promise from us to never ask him who, so we actually never did. Then the same year during annual function when i was alone he came to me telling that he have crush on....Bhindi (unreal name..name of a veggie).I looked at him in disgust.Like couldn't you choose someone who is better and doesn't give a playgirl vibe.He told me not to tell Angel but i did afterall she was my bestfriend. Why would i hide from her,and yahh she was shocked too</p>
+<img src="port28.jpg" alt="Friend Photo 2" class="right-img">
+<p>Well he has was warned by me,Angel and his friends too but you know,he is a dumb man.Let me tell you,he was rude,naughty but actually now he is very respectful and kind of a gentleman.Yup he got cheated on.Lol We (friends) kind of expected this then he suddenly was lik "Oh! i am so relieved that she cheated.".Ya she used to kind of misuse his powers as he was the vice head boy and also used to give advices to our juniors on "How to kiss?"Like why? </p>
+<div class="clear"></div>
+</section>
 
-  <h2>Angel</h2>
 
-  <p>Ohhh my baby!BEST THING HAPPENED TO ME is that i met her.We became friends when we were returning from our trip.We discovered that we both watch dramas and kpop.Now how cool is that? I must say that i was the more experienced one in dramas while she was in kpop.Our vibe matched quick and boom we became friends.Oh my god i remeber her being so introvert and now she is so different.</p>
-  <img src="port30.jpg" alt="My Baby" class="right-img">
-  <p>She has a pet dog named Tobby.Her dog and my pet rabbit kind of are friends.Whenever they meet they sit together side by side.Whenever she gets involved in an argument with others she definetely tells me because she has the trust that i would protect her at any cost.I do not celebrate my birthdays but i more than happy to see her visiting my home for my birthday as an excuse.</p>
+<section id="bestfriend">
+<h2>Angel</h2>
+<p>Ohhh my baby! BEST THING HAPPENED TO ME is that i met her. We became friends when we were returning from our trip. We discovered that we both watch dramas and kpop. Now how cool is that? I must say that i was the more experienced one in dramas while she was in kpop. Our vibe matched quick and boom we became friends. Oh my god i remeber her being so introvert and now she is so different.</p>
+<img src="port30.jpg" alt="My Baby" class="right-img">
+<p>She has a pet dog named Tobby. Her dog and my pet rabbit kind of are friends. Whenever they meet they sit together side by side. Whenever she gets involved in an argument with others she definetely tells me because she has the trust that i would protect her at any cost. I do not celebrate my birthdays but i more than happy to see her visiting my home for my birthday as an excuse.</p>
+<div class="clear"></div>
+</section>
 
 
 
+<section id="rabbit">
+<h2>Chiku The Rabbit</h2>
+<img src="port32.jpg" alt="My Rabbit" class="right-img">
+<p>He is so cute. He is a Newzealand White Rabbit named Chiku. He is just just just just So Chubby and fluffy. His warm body just makes me want to hug him all night. He hates sleeping in dark unfortunately and i already have insomnia so i cannot worsen it with keeping the lights on. So he used to hide and sleep under my bed. So i made kind of a tent on top of my office chair hoping that he would sleep in it seeing a covered roof.</p>
+<img src="port31.jpg" alt="My Rabbit 2" class="right-img">
+<p>It did! But sitting there whole night he tore the seat! Nice!! Great! Anyways who could get angry at that sweet gullu wullu pullu kuttu thing.</p>
+<div class="clear"></div>
+</section>
 
-  <h2>Chiku The Rabbit</h2>
-
-  <img src="port32" alt="My Rabbit" class="right-img">
-  <p>He is so cute.He is a Newzealand White Rabbit named Chiku.He is just just just just So Chubby and fluffy.His warm body just makes me want to hug him all nught.He hates sleeping in dark unfortunately and i already have insomnia so i cannot worsen it with keeping the lights on.So he used to hide and sleep under my bed.So i made kind of a tent on top of my office chair hoping that he would sleep in it seeing a covered roof.</p>
-  <img src="port31" alt="My Rabbit" class="right-img">
-  <p>It did! But sitting there whole night he tore the seat!Nice!!Great!Anyways who could get angry at that sweet gullu wullu pullu kuttu thing.</p>
-
-<section="Gallery">
-
+<section id="Gallery">
   <h2>More Of It</h2>
-
   <div class="gallery">
     <div class="gallery-item">
       <img src="port33.jpg" alt="Gallery Photo 1">
@@ -315,25 +282,17 @@ Also tell me which type of art you like the most.</p>
       <img src="port40.jpg" alt="Gallery Photo 8">
       <p>Description for photo 8.</p>
     </div>
-    <div class="gallery-item">
-      <img src="port41.jpg" alt="Gallery Photo 9">
-      <p>Description for photo 9.</p>
-    </div>
-    <div class="gallery-item">
-      <img src="port42.jpg" alt="Gallery Photo 10">
-      <p>Description for photo 10.</p>
-    </div>
-    
   </div>
-
-<section="movies">
-<h2>The Movies I Like</h2>
-<p>Not gonna lie I do agree that there are some memorable and epic movies in BOLLYWOOD but i also know that most of those epic movies were copied from somewhere.That somewhere is "South Indian Movies".And recent BOLLYWOOD movies are just terrible brain rots.That is why i love to watch South Indian movies more.I bet i have watched more south indian movies than BOLLYWOOD movies.</p>
-<img src="port45" alt="Movie" class="right-img">
-  <p>My faviorite South Indian movies are: Yevadu1/2,KGF,Vikram,Bahubali,RRR,Lucky the Racer and many more. These movies also have some of the best south indian actors like Allu Arjun,Prabhas, Ram Charan, Surya and many more.But if someone asks me to suggest them bollywood movie, I would suggest them "Taare Zameen Par","Sitaaren Zameen Par","Secret Superstar" and the last movie of my faviorite actor Sushant Singh Rajput "Chhichhore" (before he suicide [I still think that it was murder]).</p>
-
 </section>
 
+
+<section id="movies">
+<h2>The Movies I Like</h2>
+<p>Not gonna lie I do agree that there are some memorable and epic movies in BOLLYWOOD but i also know that most of those epic movies were copied from somewhere. That somewhere is "South Indian Movies". And recent BOLLYWOOD movies are just terrible brain rots. That is why i love to watch South Indian movies more. I bet i have watched more south indian movies than BOLLYWOOD movies.</p>
+<img src="port45.jpg" alt="Movie" class="right-img">
+<p>My faviorite South Indian movies are: Yevadu1/2, KGF, Vikram, Bahubali, RRR, Lucky the Racer and many more. These movies also have some of the best south indian actors like Allu Arjun, Prabhas, Ram Charan, Surya and many more. But if someone asks me to suggest them bollywood movie, I would suggest them "Taare Zameen Par", "Sitaaren Zameen Par", "Secret Superstar" and the last movie of my faviorite actor Sushant Singh Rajput "Chhichhore" (before he suicide [I still think that it was murder]).</p>
+<div class="clear"></div>
+</section>
 
 </body>
 </html>
