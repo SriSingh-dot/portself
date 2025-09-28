@@ -12,6 +12,10 @@
 (COOL COOL)
 
 
+# Problem in site
+- Ok for some reason the font style i chose for the heading is not working on brave but was working when i opened it through vs code on Chrome or seperately opening it on Chrome through the playable link So i would advice you to review using chrome? ig it is alright if not.
+
+
 
 
 [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
